@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>Welcome to NYC Quick Prints</title>
+    <script>
+	function change() {
+	    document.getElementById("myText").innerHTML = "hello, world!";
+	}
+    </script>
     <style>
 	body {
 		background-color: lightblue;
@@ -18,6 +23,7 @@
 </head>
 <body>
 <h1>Welcome to NYC Quick Prints</h1>
-<p>We are under construction for our marketplace.</p>
+<p id="myText">We are under construction for our marketplace.</p>
+<button onclick="changeText()">Click Me </button>
 </body>
 </html>
